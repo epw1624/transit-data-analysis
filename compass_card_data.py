@@ -15,7 +15,7 @@ class CompassCardData:
     def __init__(self, filepath):
         self.data = pandas.read_csv(filepath)
         self.extract_transaction()
-        self.data = self.data.drop(columns=self.COLS_TO_DROP)
+        self.data.drop(columns=self.COLS_TO_DROP, inplace=True)
 
     def extract_transaction(self):
         transactions = list(self.data["Transaction"])
@@ -31,6 +31,7 @@ class CompassCardData:
         bus_trips = self.data[self.data["Location"].str.split(" ").str[0] == "Bus"]
         stops = list(map(lambda l: l.split(" ")[-1], list(bus_trips["Location"])))
         bus_trips["Stop"] = stops
+        bus_trips["Stop"] = bus_trips["Stop"].astype(float)
         return bus_trips
     
     def get_bus_stops_with_frequencies(self):
@@ -42,6 +43,14 @@ class CompassCardData:
             else:
                 stops[int(stop)] += 1
 
-        return stops
+        # convert to pandas dataframe
+        stop_ids = []
+        frequencies = []
+        for key in stops:
+            stop_ids.append(key)
+            frequencies.append(stops[key])
+        df = pandas.DataFrame({"stop_code": stop_ids, "frequency": frequencies})
+
+        return df
 
     

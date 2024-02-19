@@ -18,6 +18,11 @@ class CompassCardData:
         self.data.drop(columns=self.COLS_TO_DROP, inplace=True)
 
     def extract_transaction(self):
+        """
+        Splits the "Transaction" column into the more useful "Action" and "Location" columns
+        Action: one of the CardActions listed above
+        Location: either the name of a skytrain station, or "Bus Stop xxxxx"
+        """
         transactions = list(self.data["Transaction"])
 
         # for reasons unknown, I couldn't get this to work with only one map
@@ -28,6 +33,9 @@ class CompassCardData:
         self.data["Location"] = locations
 
     def get_bus_trips(self):
+        """
+        returns a filtered version of self.data that excludes any non-bus trips
+        """
         bus_trips = self.data[self.data["Location"].str.split(" ").str[0] == "Bus"]
         stops = list(map(lambda l: l.split(" ")[-1], list(bus_trips["Location"])))
         bus_trips["Stop"] = stops
@@ -35,6 +43,11 @@ class CompassCardData:
         return bus_trips
     
     def get_bus_stops_with_frequencies(self):
+        """
+        returns a pandas.DataFrame with 2 columns: "stop_code" and "frequency"
+        stop_code: the bus_stop code
+        frequency: the total number of transactions with that stop code in self.get_bus_trips
+        """
         bus_trips = self.get_bus_trips()
         stops = {}
         for stop in list(bus_trips["Stop"]):

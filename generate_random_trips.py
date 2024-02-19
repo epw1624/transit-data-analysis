@@ -18,8 +18,10 @@ def random_datetime(start_date, end_date):
 
 # only interested in generating bus trips, so all transactions have the form "Tap in at Bus Stop xxxxx"
 def random_bus_transactions(bus_stop_codes, num_transactions):
-    # index = random.randint(0, len(bus_stop_codes) - 1)
-    # return f"Tap in at Bus Stop {bus_stop_codes[index]}"
+    """
+    returns a list of num_transactions bus transactions
+    stop codes are selected using a normal distribution from bus_stop_codes
+    """
     mean = len(bus_stop_codes) // 2
     probabilities = numpy.exp(-(numpy.arange(len(bus_stop_codes)) - mean)**2 / (2 * STD_DEV**2))
     probabilities /= probabilities.sum()

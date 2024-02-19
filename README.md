@@ -46,7 +46,7 @@ Sample data includes only Zone 1 bus stops. Unforunately for me, the TransLink d
 - Eastern boundary: Boundary Road
 - Southern boundary: YVR Airport
 - Northern boundary: Stanley Park
-\
+
 
 I took all bus stops, and filtered for coordinates within this range.
 

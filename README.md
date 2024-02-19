@@ -45,7 +45,8 @@ Random datetime values between 01/31/2023 and 01/31/2024
 Sample data includes only Zone 1 bus stops. Unforunately for me, the TransLink data does not include the zone on bus stops, so I had to approximate zone 1 using some landmarks:
 - Eastern boundary: Boundary Road
 - Southern boundary: YVR Airport
-- Northern boundary: Stanley Park \
+- Northern boundary: Stanley Park
+\
 I took all bus stops, and filtered for coordinates within this range.
 
 From this filtered list, 30 stops are randomly selected to be included in the data.

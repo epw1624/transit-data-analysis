@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_19a8ba76c9931137c9f12527e6814ba3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_19a8ba76c9931137c9f12527e6814ba3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_19a8ba76c9931137c9f12527e6814ba3 = L.map(
+                "map_19a8ba76c9931137c9f12527e6814ba3",
+                {
+                    center: [49.2827, -123.1207],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8428152d5c9e0228da1fd1604cb8a080 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8428152d5c9e0228da1fd1604cb8a080.addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var marker_7bef9502b7e9380c950adae42bae1c54 = L.marker(
+                [49.210767, -123.097945],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_6fb60908f7f102bc2721b77cc72b4ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7bef9502b7e9380c950adae42bae1c54.setIcon(icon_6fb60908f7f102bc2721b77cc72b4ad3);
+        
+    
+        var popup_9c3e85aac6dfd8f3cbc9770fc9fe756c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8cb6e8208704556198ba3f002e7e184 = $(`<div id="html_b8cb6e8208704556198ba3f002e7e184" style="width: 100.0%; height: 100.0%;">Eastbound SE Marine Dr @ Prince Edward St 46 visits</div>`)[0];
+                popup_9c3e85aac6dfd8f3cbc9770fc9fe756c.setContent(html_b8cb6e8208704556198ba3f002e7e184);
+            
+        
+
+        marker_7bef9502b7e9380c950adae42bae1c54.bindPopup(popup_9c3e85aac6dfd8f3cbc9770fc9fe756c)
+        ;
+
+        
+    
+    
+            var marker_be749f0d7a4db0d358970683952cd7f6 = L.marker(
+                [49.256014, -123.235156],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_d05d01987f9ea1cc1bb0e14b8b80e504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_be749f0d7a4db0d358970683952cd7f6.setIcon(icon_d05d01987f9ea1cc1bb0e14b8b80e504);
+        
+    
+        var popup_3c997c484465b72a5072294ebabb544f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cadb6a5ffe5ee743bf706b558faea721 = $(`<div id="html_cadb6a5ffe5ee743bf706b558faea721" style="width: 100.0%; height: 100.0%;">Eastbound W 16 Ave @ Wesbrook Mall 13 visits</div>`)[0];
+                popup_3c997c484465b72a5072294ebabb544f.setContent(html_cadb6a5ffe5ee743bf706b558faea721);
+            
+        
+
+        marker_be749f0d7a4db0d358970683952cd7f6.bindPopup(popup_3c997c484465b72a5072294ebabb544f)
+        ;
+
+        
+    
+    
+            var marker_2d33a503415eec8ea91b0a49dea4428f = L.marker(
+                [49.227223, -123.164688],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_60aabbe2cd49b95123005b890819550e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2d33a503415eec8ea91b0a49dea4428f.setIcon(icon_60aabbe2cd49b95123005b890819550e);
+        
+    
+        var popup_81b2edcb5b9b211f548beea8b5ff16fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6ecdb205929550da5738fd5f1e35d31 = $(`<div id="html_b6ecdb205929550da5738fd5f1e35d31" style="width: 100.0%; height: 100.0%;">Eastbound W 49 Ave @ Marine Cres 26 visits</div>`)[0];
+                popup_81b2edcb5b9b211f548beea8b5ff16fe.setContent(html_b6ecdb205929550da5738fd5f1e35d31);
+            
+        
+
+        marker_2d33a503415eec8ea91b0a49dea4428f.bindPopup(popup_81b2edcb5b9b211f548beea8b5ff16fe)
+        ;
+
+        
+    
+    
+            var marker_9caf44a681d6608d0dce19caab836c68 = L.marker(
+                [49.278573, -123.130164],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_9e06c636fc3b7c08937ed2236dc68531 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9caf44a681d6608d0dce19caab836c68.setIcon(icon_9e06c636fc3b7c08937ed2236dc68531);
+        
+    
+        var popup_d4ac3a76c110638a4f0d0b586e533eec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caad899e97749f180911be973fe60ec4 = $(`<div id="html_caad899e97749f180911be973fe60ec4" style="width: 100.0%; height: 100.0%;">Southbound Burrard St @ Burnaby St 42 visits</div>`)[0];
+                popup_d4ac3a76c110638a4f0d0b586e533eec.setContent(html_caad899e97749f180911be973fe60ec4);
+            
+        
+
+        marker_9caf44a681d6608d0dce19caab836c68.bindPopup(popup_d4ac3a76c110638a4f0d0b586e533eec)
+        ;
+
+        
+    
+    
+            var marker_df221fb575ef6a916b1584c36f26c52e = L.marker(
+                [49.284178, -123.121677],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_7be8d434282f64519c4a175bc58b2d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_df221fb575ef6a916b1584c36f26c52e.setIcon(icon_7be8d434282f64519c4a175bc58b2d3d);
+        
+    
+        var popup_2dd0f44cb92b1b11ddf7c065de62c970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e57841cae5daaed5b155ec80a3d596a4 = $(`<div id="html_e57841cae5daaed5b155ec80a3d596a4" style="width: 100.0%; height: 100.0%;">Southbound Burrard St @ W Georgia St 38 visits</div>`)[0];
+                popup_2dd0f44cb92b1b11ddf7c065de62c970.setContent(html_e57841cae5daaed5b155ec80a3d596a4);
+            
+        
+
+        marker_df221fb575ef6a916b1584c36f26c52e.bindPopup(popup_2dd0f44cb92b1b11ddf7c065de62c970)
+        ;
+
+        
+    
+    
+            var marker_55c1995333a1fe912465c4a09ca2b496 = L.marker(
+                [49.233445, -123.101394],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_fe408f4eef70211af60827efca9774ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_55c1995333a1fe912465c4a09ca2b496.setIcon(icon_fe408f4eef70211af60827efca9774ce);
+        
+    
+        var popup_b121eb7d6bef4f2d40e14d8500706cca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f17c4151a6b6864ce9a1e3a75a80633 = $(`<div id="html_6f17c4151a6b6864ce9a1e3a75a80633" style="width: 100.0%; height: 100.0%;">Northbound Main St @ E 41 Ave 38 visits</div>`)[0];
+                popup_b121eb7d6bef4f2d40e14d8500706cca.setContent(html_6f17c4151a6b6864ce9a1e3a75a80633);
+            
+        
+
+        marker_55c1995333a1fe912465c4a09ca2b496.bindPopup(popup_b121eb7d6bef4f2d40e14d8500706cca)
+        ;
+
+        
+    
+    
+            var marker_987fc3f0ff48a2b8da1a6729b9e94629 = L.marker(
+                [49.263107, -123.114283],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_b39672e15a4942285ed439ac43d8adfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_987fc3f0ff48a2b8da1a6729b9e94629.setIcon(icon_b39672e15a4942285ed439ac43d8adfb);
+        
+    
+        var popup_a0c7cc220b81f5694be2ad1c7c8aac83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7174b2e294942d3fad154fb9fd7f1fa2 = $(`<div id="html_7174b2e294942d3fad154fb9fd7f1fa2" style="width: 100.0%; height: 100.0%;">Broadway-City Hall Station @ Bay 1 20 visits</div>`)[0];
+                popup_a0c7cc220b81f5694be2ad1c7c8aac83.setContent(html_7174b2e294942d3fad154fb9fd7f1fa2);
+            
+        
+
+        marker_987fc3f0ff48a2b8da1a6729b9e94629.bindPopup(popup_a0c7cc220b81f5694be2ad1c7c8aac83)
+        ;
+
+        
+    
+    
+            var marker_d4487b17b82bbd07af37564c6f675bfe = L.marker(
+                [49.229631, -123.155866],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_a209fe9431eb3dcb91d9630242724cc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d4487b17b82bbd07af37564c6f675bfe.setIcon(icon_a209fe9431eb3dcb91d9630242724cc8);
+        
+    
+        var popup_7bc89d6102649a0542f130b1390fb439 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af2fbbe14991932bb997d8fc8c327bfa = $(`<div id="html_af2fbbe14991932bb997d8fc8c327bfa" style="width: 100.0%; height: 100.0%;">Southbound West Blvd @ W 46th Ave 29 visits</div>`)[0];
+                popup_7bc89d6102649a0542f130b1390fb439.setContent(html_af2fbbe14991932bb997d8fc8c327bfa);
+            
+        
+
+        marker_d4487b17b82bbd07af37564c6f675bfe.bindPopup(popup_7bc89d6102649a0542f130b1390fb439)
+        ;
+
+        
+    
+    
+            var marker_ba675ca3101cf2758a87af07ae42efe8 = L.marker(
+                [49.213646, -123.140212],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_172a0ea35e1f4d76468cc5a7bcddbb46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ba675ca3101cf2758a87af07ae42efe8.setIcon(icon_172a0ea35e1f4d76468cc5a7bcddbb46);
+        
+    
+        var popup_eccd5eb697be9a737f0e2f08f14af99a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb4cee91a82f045f3eb1627faf9c165e = $(`<div id="html_cb4cee91a82f045f3eb1627faf9c165e" style="width: 100.0%; height: 100.0%;">Northbound Granville St @ W 64 Ave 2 visits</div>`)[0];
+                popup_eccd5eb697be9a737f0e2f08f14af99a.setContent(html_cb4cee91a82f045f3eb1627faf9c165e);
+            
+        
+
+        marker_ba675ca3101cf2758a87af07ae42efe8.bindPopup(popup_eccd5eb697be9a737f0e2f08f14af99a)
+        ;
+
+        
+    
+    
+            var marker_d54587ffc9371e5f1fb22ff97b793503 = L.marker(
+                [49.240485, -123.097295],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_9fcda58985e2cd02b8b4091b998d8257 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d54587ffc9371e5f1fb22ff97b793503.setIcon(icon_9fcda58985e2cd02b8b4091b998d8257);
+        
+    
+        var popup_526a2a7478e5b99d0ebe49e507c844ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_467d6863c6ff7e2ad390f0d2e4a8dfaf = $(`<div id="html_467d6863c6ff7e2ad390f0d2e4a8dfaf" style="width: 100.0%; height: 100.0%;">Westbound E 33 Ave @ Prince Edward St 26 visits</div>`)[0];
+                popup_526a2a7478e5b99d0ebe49e507c844ba.setContent(html_467d6863c6ff7e2ad390f0d2e4a8dfaf);
+            
+        
+
+        marker_d54587ffc9371e5f1fb22ff97b793503.bindPopup(popup_526a2a7478e5b99d0ebe49e507c844ba)
+        ;
+
+        
+    
+    
+            var marker_03dce4255aff0f0458aec2d28d30e438 = L.marker(
+                [49.27362, -123.056724],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_1b54c23a6235f57c3ce6e0a7dd777a13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_03dce4255aff0f0458aec2d28d30e438.setIcon(icon_1b54c23a6235f57c3ce6e0a7dd777a13);
+        
+    
+        var popup_651118a918d11cb9d38a3513a0ac277c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2ddb97c4e8e63fcc83195b99ae98da7 = $(`<div id="html_e2ddb97c4e8e63fcc83195b99ae98da7" style="width: 100.0%; height: 100.0%;">Southbound Nanaimo St @ William St 29 visits</div>`)[0];
+                popup_651118a918d11cb9d38a3513a0ac277c.setContent(html_e2ddb97c4e8e63fcc83195b99ae98da7);
+            
+        
+
+        marker_03dce4255aff0f0458aec2d28d30e438.bindPopup(popup_651118a918d11cb9d38a3513a0ac277c)
+        ;
+
+        
+    
+    
+            var marker_15d4d1108682de9a85009d1c2f7dfe44 = L.marker(
+                [49.243673, -123.056787],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_5daba049b33f590410cff262be5d1e77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_15d4d1108682de9a85009d1c2f7dfe44.setIcon(icon_5daba049b33f590410cff262be5d1e77);
+        
+    
+        var popup_a4fbb944940d6a3f13f2c62f094bf640 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0088e72d61fc3a11a387c9d2acb278e = $(`<div id="html_b0088e72d61fc3a11a387c9d2acb278e" style="width: 100.0%; height: 100.0%;">Southbound Nanaimo St @ Brock St 35 visits</div>`)[0];
+                popup_a4fbb944940d6a3f13f2c62f094bf640.setContent(html_b0088e72d61fc3a11a387c9d2acb278e);
+            
+        
+
+        marker_15d4d1108682de9a85009d1c2f7dfe44.bindPopup(popup_a4fbb944940d6a3f13f2c62f094bf640)
+        ;
+
+        
+    
+    
+            var marker_34a57363bddbe7d75c11eb86e855f855 = L.marker(
+                [49.25819, -123.21185],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_660f52679772a0e572612b32c17cb1dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_34a57363bddbe7d75c11eb86e855f855.setIcon(icon_660f52679772a0e572612b32c17cb1dd);
+        
+    
+        var popup_6328872a8ce508a796b0e8145e0b559f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e54e35d6900531536c0b43b8373c58b = $(`<div id="html_4e54e35d6900531536c0b43b8373c58b" style="width: 100.0%; height: 100.0%;">Eastbound W 16 Ave @ Tolmie St 36 visits</div>`)[0];
+                popup_6328872a8ce508a796b0e8145e0b559f.setContent(html_4e54e35d6900531536c0b43b8373c58b);
+            
+        
+
+        marker_34a57363bddbe7d75c11eb86e855f855.bindPopup(popup_6328872a8ce508a796b0e8145e0b559f)
+        ;
+
+        
+    
+    
+            var marker_f38fe06df317c8df595259e04df99380 = L.marker(
+                [49.258823, -123.153203],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_5935ae2c6af99cf2aa12091024cacc55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_f38fe06df317c8df595259e04df99380.setIcon(icon_5935ae2c6af99cf2aa12091024cacc55);
+        
+    
+        var popup_dd2495a24e0c8c41a4711501734c84cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbcb006966f61aa58cded020cc085fa5 = $(`<div id="html_fbcb006966f61aa58cded020cc085fa5" style="width: 100.0%; height: 100.0%;">Southbound Arbutus St @ W 14 Ave 9 visits</div>`)[0];
+                popup_dd2495a24e0c8c41a4711501734c84cb.setContent(html_fbcb006966f61aa58cded020cc085fa5);
+            
+        
+
+        marker_f38fe06df317c8df595259e04df99380.bindPopup(popup_dd2495a24e0c8c41a4711501734c84cb)
+        ;
+
+        
+    
+    
+            var marker_24adc3aa355a5530d1ccba07aa862ecb = L.marker(
+                [49.24028, -123.053651],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_a1b0abf1622be91c74aa9cd9e0cecf23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_24adc3aa355a5530d1ccba07aa862ecb.setIcon(icon_a1b0abf1622be91c74aa9cd9e0cecf23);
+        
+    
+        var popup_39661ab4228af6bffeb9845105dc17b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_418730726ccb4a0d20295c372d96008d = $(`<div id="html_418730726ccb4a0d20295c372d96008d" style="width: 100.0%; height: 100.0%;">Northbound Slocan St @ Kingsway 19 visits</div>`)[0];
+                popup_39661ab4228af6bffeb9845105dc17b0.setContent(html_418730726ccb4a0d20295c372d96008d);
+            
+        
+
+        marker_24adc3aa355a5530d1ccba07aa862ecb.bindPopup(popup_39661ab4228af6bffeb9845105dc17b0)
+        ;
+
+        
+    
+    
+            var marker_41df2d4226fa61ab61459abc58dd7ce1 = L.marker(
+                [49.260394, -123.120306],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_ec8459aeb1b7e53b5219492027046f5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_41df2d4226fa61ab61459abc58dd7ce1.setIcon(icon_ec8459aeb1b7e53b5219492027046f5a);
+        
+    
+        var popup_6e58bbe31ddd1f5f9f59aad762bfbb2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac51a6cbdc2d537f0a9f87f3c5fbe36e = $(`<div id="html_ac51a6cbdc2d537f0a9f87f3c5fbe36e" style="width: 100.0%; height: 100.0%;">Eastbound W 12th Ave @ Heather St 22 visits</div>`)[0];
+                popup_6e58bbe31ddd1f5f9f59aad762bfbb2f.setContent(html_ac51a6cbdc2d537f0a9f87f3c5fbe36e);
+            
+        
+
+        marker_41df2d4226fa61ab61459abc58dd7ce1.bindPopup(popup_6e58bbe31ddd1f5f9f59aad762bfbb2f)
+        ;
+
+        
+    
+    
+            var marker_74e5033f99cc953d3abf1a616cd1b558 = L.marker(
+                [49.226886, -123.139329],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_21a86db32322ab3fffedbab74826ddcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_74e5033f99cc953d3abf1a616cd1b558.setIcon(icon_21a86db32322ab3fffedbab74826ddcf);
+        
+    
+        var popup_753db60ae96d6bdd5a293d6d5f900790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88680502f6dd6d39f0651da29f7e1a5c = $(`<div id="html_88680502f6dd6d39f0651da29f7e1a5c" style="width: 100.0%; height: 100.0%;">Eastbound W 49 Ave @ Granville St 7 visits</div>`)[0];
+                popup_753db60ae96d6bdd5a293d6d5f900790.setContent(html_88680502f6dd6d39f0651da29f7e1a5c);
+            
+        
+
+        marker_74e5033f99cc953d3abf1a616cd1b558.bindPopup(popup_753db60ae96d6bdd5a293d6d5f900790)
+        ;
+
+        
+    
+    
+            var marker_4c3be04100ce5289f2f0b8e1e2029855 = L.marker(
+                [49.212749, -123.091181],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_3e597aa6188e5c4c49f0b8e5b566feb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_4c3be04100ce5289f2f0b8e1e2029855.setIcon(icon_3e597aa6188e5c4c49f0b8e5b566feb9);
+        
+    
+        var popup_fd9ec1f5db3ef2e5035d03886857e180 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_932bedcea8a0589e1393fb722d98ff97 = $(`<div id="html_932bedcea8a0589e1393fb722d98ff97" style="width: 100.0%; height: 100.0%;">Southbound Fraser St @ E 63 Ave 7 visits</div>`)[0];
+                popup_fd9ec1f5db3ef2e5035d03886857e180.setContent(html_932bedcea8a0589e1393fb722d98ff97);
+            
+        
+
+        marker_4c3be04100ce5289f2f0b8e1e2029855.bindPopup(popup_fd9ec1f5db3ef2e5035d03886857e180)
+        ;
+
+        
+    
+    
+            var marker_a9986b5381d09305789da253fc07a383 = L.marker(
+                [49.282359, -123.124019],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_29f97528093ebb5dacd53f64c65519eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_a9986b5381d09305789da253fc07a383.setIcon(icon_29f97528093ebb5dacd53f64c65519eb);
+        
+    
+        var popup_a79a53eafed7fdf6a2c4515134a0048c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22e4fc8eb93e7d0920a193dc4e6bbbbf = $(`<div id="html_22e4fc8eb93e7d0920a193dc4e6bbbbf" style="width: 100.0%; height: 100.0%;">Northbound Burrard St @ Smithe St 17 visits</div>`)[0];
+                popup_a79a53eafed7fdf6a2c4515134a0048c.setContent(html_22e4fc8eb93e7d0920a193dc4e6bbbbf);
+            
+        
+
+        marker_a9986b5381d09305789da253fc07a383.bindPopup(popup_a79a53eafed7fdf6a2c4515134a0048c)
+        ;
+
+        
+    
+    
+            var marker_6de843666d53046b67938be57f092f70 = L.marker(
+                [49.239532, -123.047123],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_494732e4fe10bb5aaee483bd3137d237 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6de843666d53046b67938be57f092f70.setIcon(icon_494732e4fe10bb5aaee483bd3137d237);
+        
+    
+        var popup_ad8db2d7db1682981562fbefd71093ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bab7c438bd6f7ff943d74934d8a49c38 = $(`<div id="html_bab7c438bd6f7ff943d74934d8a49c38" style="width: 100.0%; height: 100.0%;">Southbound Earles St @ Horley St 1 visits</div>`)[0];
+                popup_ad8db2d7db1682981562fbefd71093ab.setContent(html_bab7c438bd6f7ff943d74934d8a49c38);
+            
+        
+
+        marker_6de843666d53046b67938be57f092f70.bindPopup(popup_ad8db2d7db1682981562fbefd71093ab)
+        ;
+
+        
+    
+    
+            var marker_6cab372eed891b18568e4df7cba81806 = L.marker(
+                [49.225164, -123.071276],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_88f76d70965c4a7576460f3aa0b61957 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6cab372eed891b18568e4df7cba81806.setIcon(icon_88f76d70965c4a7576460f3aa0b61957);
+        
+    
+        var popup_f774dea401427e6b62041d566464a9b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d7491908d6a21394a723d0762031872 = $(`<div id="html_4d7491908d6a21394a723d0762031872" style="width: 100.0%; height: 100.0%;">Eastbound E 49 Ave @ Argyle St 12 visits</div>`)[0];
+                popup_f774dea401427e6b62041d566464a9b0.setContent(html_4d7491908d6a21394a723d0762031872);
+            
+        
+
+        marker_6cab372eed891b18568e4df7cba81806.bindPopup(popup_f774dea401427e6b62041d566464a9b0)
+        ;
+
+        
+    
+    
+            var marker_8be82c0ab231a23fc27aed3d414bf6cf = L.marker(
+                [49.266906, -123.09471],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_a798838b11f9cda7947de92420fe9230 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_8be82c0ab231a23fc27aed3d414bf6cf.setIcon(icon_a798838b11f9cda7947de92420fe9230);
+        
+    
+        var popup_86b3526da6acd42335abf53dacb2fcf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_976983e29694619fc42d13bf361ab588 = $(`<div id="html_976983e29694619fc42d13bf361ab588" style="width: 100.0%; height: 100.0%;">Westbound Great Northern Way @ Thornton St 5 visits</div>`)[0];
+                popup_86b3526da6acd42335abf53dacb2fcf6.setContent(html_976983e29694619fc42d13bf361ab588);
+            
+        
+
+        marker_8be82c0ab231a23fc27aed3d414bf6cf.bindPopup(popup_86b3526da6acd42335abf53dacb2fcf6)
+        ;
+
+        
+    
+    
+            var marker_a8e969960fc49311c533159c60a31d71 = L.marker(
+                [49.215571, -123.036746],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_d6fa9ab585a2db2f2a808d148b99b09e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_a8e969960fc49311c533159c60a31d71.setIcon(icon_d6fa9ab585a2db2f2a808d148b99b09e);
+        
+    
+        var popup_7fbaf3464c92360d5b53ceec36810a68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb60382d09dd6536b90f898749b328db = $(`<div id="html_cb60382d09dd6536b90f898749b328db" style="width: 100.0%; height: 100.0%;">Eastbound Rosemont Dr @ 3200 Block 6 visits</div>`)[0];
+                popup_7fbaf3464c92360d5b53ceec36810a68.setContent(html_cb60382d09dd6536b90f898749b328db);
+            
+        
+
+        marker_a8e969960fc49311c533159c60a31d71.bindPopup(popup_7fbaf3464c92360d5b53ceec36810a68)
+        ;
+
+        
+    
+    
+            var marker_4a0e17fcfe104d0b066892abeafbb127 = L.marker(
+                [49.261818, -123.037407],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_5bf9514dde23a3ecd1d033154eb92e22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a0e17fcfe104d0b066892abeafbb127.setIcon(icon_5bf9514dde23a3ecd1d033154eb92e22);
+        
+    
+        var popup_dc575ac6dca79132a4dd015ef9f5cfc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb059da3ca9b0e6eecafb987e79e551f = $(`<div id="html_bb059da3ca9b0e6eecafb987e79e551f" style="width: 100.0%; height: 100.0%;">Eastbound E Broadway @ Lillooet St 1 visits</div>`)[0];
+                popup_dc575ac6dca79132a4dd015ef9f5cfc3.setContent(html_bb059da3ca9b0e6eecafb987e79e551f);
+            
+        
+
+        marker_4a0e17fcfe104d0b066892abeafbb127.bindPopup(popup_dc575ac6dca79132a4dd015ef9f5cfc3)
+        ;
+
+        
+    
+    
+            var marker_98b03e9279a68b6bdf4552147643fd30 = L.marker(
+                [49.262018, -123.07773],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_0eaaf39384a973e3b7a930cb0610e8c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_98b03e9279a68b6bdf4552147643fd30.setIcon(icon_0eaaf39384a973e3b7a930cb0610e8c2);
+        
+    
+        var popup_172991cd4ab3c9b6405d63b79449af22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de19b812ec8c6327c6231d330e95366b = $(`<div id="html_de19b812ec8c6327c6231d330e95366b" style="width: 100.0%; height: 100.0%;">Southbound Clark Dr @ E Broadway 4 visits</div>`)[0];
+                popup_172991cd4ab3c9b6405d63b79449af22.setContent(html_de19b812ec8c6327c6231d330e95366b);
+            
+        
+
+        marker_98b03e9279a68b6bdf4552147643fd30.bindPopup(popup_172991cd4ab3c9b6405d63b79449af22)
+        ;
+
+        
+    
+    
+            var marker_f74116c88f10530c9785ebdc911fd421 = L.marker(
+                [49.267404, -123.138259],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_d513228b8d13c1c44da3f8f9e42c244e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f74116c88f10530c9785ebdc911fd421.setIcon(icon_d513228b8d13c1c44da3f8f9e42c244e);
+        
+    
+        var popup_b82136252f9f39bed9e7e997d058831e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4d6535d6eef10f5e87fa567929c2cfd = $(`<div id="html_c4d6535d6eef10f5e87fa567929c2cfd" style="width: 100.0%; height: 100.0%;">Northbound Granville St @ W 5th Ave 2 visits</div>`)[0];
+                popup_b82136252f9f39bed9e7e997d058831e.setContent(html_c4d6535d6eef10f5e87fa567929c2cfd);
+            
+        
+
+        marker_f74116c88f10530c9785ebdc911fd421.bindPopup(popup_b82136252f9f39bed9e7e997d058831e)
+        ;
+
+        
+    
+    
+            var marker_a99f379950b0170821e117da090bfb46 = L.marker(
+                [49.251217, -123.155187],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_0d9084dd0199eeeefc6ecd6fd580bc6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a99f379950b0170821e117da090bfb46.setIcon(icon_0d9084dd0199eeeefc6ecd6fd580bc6d);
+        
+    
+        var popup_713ec3fb4f6a498fa9db6c43871eecc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_676154eeb9d3cb7cac3de7d896a64997 = $(`<div id="html_676154eeb9d3cb7cac3de7d896a64997" style="width: 100.0%; height: 100.0%;">Eastbound W King Edward Ave @ Yew St 1 visits</div>`)[0];
+                popup_713ec3fb4f6a498fa9db6c43871eecc7.setContent(html_676154eeb9d3cb7cac3de7d896a64997);
+            
+        
+
+        marker_a99f379950b0170821e117da090bfb46.bindPopup(popup_713ec3fb4f6a498fa9db6c43871eecc7)
+        ;
+
+        
+    
+    
+            var marker_73c3e857495b5b3614ee2ed879396988 = L.marker(
+                [49.223033, -123.090707],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_ab98bb8040bec19d44648be1165dd14d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_73c3e857495b5b3614ee2ed879396988.setIcon(icon_ab98bb8040bec19d44648be1165dd14d);
+        
+    
+        var popup_8be433e196eadf203dd39ece5103d9d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8058e8d921344623f2d6fba45cec28b5 = $(`<div id="html_8058e8d921344623f2d6fba45cec28b5" style="width: 100.0%; height: 100.0%;">Northbound Fraser St @ E 52 Ave 5 visits</div>`)[0];
+                popup_8be433e196eadf203dd39ece5103d9d4.setContent(html_8058e8d921344623f2d6fba45cec28b5);
+            
+        
+
+        marker_73c3e857495b5b3614ee2ed879396988.bindPopup(popup_8be433e196eadf203dd39ece5103d9d4)
+        ;
+
+        
+    
+    
+            var marker_f871fd87a87d9fcc857b8417e47ca18a = L.marker(
+                [49.263233, -123.100792],
+                {}
+            ).addTo(map_19a8ba76c9931137c9f12527e6814ba3);
+        
+    
+            var icon_6d826d7db8a8242486ec8d95ba61757a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f871fd87a87d9fcc857b8417e47ca18a.setIcon(icon_6d826d7db8a8242486ec8d95ba61757a);
+        
+    
+        var popup_10dc60be2a79f7a10db8532392a68f48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f1d123ffb1624863a6031b1472a1bea = $(`<div id="html_7f1d123ffb1624863a6031b1472a1bea" style="width: 100.0%; height: 100.0%;">Northbound Main St @ E Broadway 2 visits</div>`)[0];
+                popup_10dc60be2a79f7a10db8532392a68f48.setContent(html_7f1d123ffb1624863a6031b1472a1bea);
+            
+        
+
+        marker_f871fd87a87d9fcc857b8417e47ca18a.bindPopup(popup_10dc60be2a79f7a10db8532392a68f48)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,7 +1,7 @@
 Route and arrival data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
 
 # To Use: #
-Modify the filepaths on lines 35 and 37 of map_bus_stops.py to point to the stops data available from TransLink (downloadable from [here](https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs/gtfs-data) and a .csv file containing some Compass Card usage data, respectively. 
+Modify the filepaths on lines 35 and 37 of map_bus_stops.py to point to the stops data available from TransLink (downloadable from [here](https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs/gtfs-data) and a .csv file containing some Compass Card usage data, respectively. Alternatively, use generate_random_trips.py to create some fake data to map.
 ```sh
 python map_bus_stops.py
 ```

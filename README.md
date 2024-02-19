@@ -7,7 +7,7 @@ python map_bus_stops.py
 ```
 Open the generated file "map.html" in your browser to see the results.
 Here is an example, which can be viewed interactively by opening "sample_map.html in a browser:
-![image](https://github.com/epw1624/transit-data-analysis/assets/112768709/69fd6db1-614e-4f76-a3e7-c1ba81c81652)
+![image](https://github.com/epw1624/transit-data-analysis/assets/112768709/69fd6db1-614e-4f76-a3e7-c1ba81c81652) \
 This map was generated using random data created with generate_random_trips.py, so don't come looking for me at these bus stops...
 
 ### Project Details ###
